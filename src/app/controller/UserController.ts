@@ -3,10 +3,9 @@ import { UserModel } from "../models/UserModel";
 
 class UserController{
     public async uploadAvatar(req: Request, res: Response) {
-        //Perguntamos se depois de validado existe o file dentro do request
+      
     if (req.file) {
-        //Se ele existir, retornamos um sucess com o payload do arquivo gerado
-        //Aqui sua criatividade é o limite
+       
   
         //Salvando os dados do usuário no MongoDB
         try {
@@ -36,7 +35,6 @@ class UserController{
     public get(req: Request, res: Response){
         let data = {
             name: 'aula node express typecript mongo db mongoose',
-            youtube: 'Mentor Nerd'
         }
         return res.json(data)
 
