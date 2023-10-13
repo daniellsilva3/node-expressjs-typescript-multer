@@ -19,7 +19,7 @@ private router(){
 }
 public async connectDatabase() {
 
- let urlDB= "mongodb+srv://user2003:teste1234@cluster0.0thuhqo.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp"
+ let urlDB= ""
 
     try {
         await moongoose.connect(urlDB)
